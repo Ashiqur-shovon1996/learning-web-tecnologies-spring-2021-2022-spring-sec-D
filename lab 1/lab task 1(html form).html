@@ -1,110 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body  {
-                background-color: aqua;
+  <head>
+    <style>
+      body {
+        background-color: aqua;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <legend>*-Denotes required information:</legend>
+      <p>
+        <b> > 1 Donation &nbsp;&nbsp;</b> > 2 Confirmation &nbsp;&nbsp; > 3
+        Thank you!&nbsp;&nbsp;
+      </p>
+      <h2>
+        <p style="color: red">Donor Information</p>
+      </h2>
+      <label for="fname"><b> First Name:</b></label>
+      <input type="text" required /><br /><br />
 
-            }
-        </style>
-    </head>
-    <body>
-        <form>
-                 <legend> *-Denotes required information:</legend>
-                <p>  <b> > 1 Donation &nbsp;&nbsp;</b> > 2 Confirmation &nbsp;&nbsp; > 3 Thank you!&nbsp;&nbsp;</p>
-                <h2>
-                    <p style ="color: red;"> Donor Information</p>
-                </h2>
-                <label for="fname"> First Name:</label>
-                <input type="text" required><br><br>
+      <label for="lname"> Last Name:</label>
+      <input type="text" required /><br /><br />
 
-                <label for="lname"> Last Name:</label>
-                <input type="text" required><br><br>
+      <label for="cname"> Company Name:</label>
+      <input type="text" required /><br /><br />
 
-                <label for="cname"> Company Name:</label>
-                <input type="text" required><br><br>
+      <label for="aname1"> Address 1:</label>
+      <input type="text" required /><br /><br />
 
-                <label for="aname1"> Address 1:</label>
-                <input type="text" required><br><br>
+      <label for="aname2"> Address 2:</label>
+      <input type="text" required /><br /><br />
 
-                <label for="aname2"> Address 2:</label>
-                <input type="text" required><br><br>
+      <label for="cname"> City:</label>
+      <input type="text" /><br /><br />
 
-                <label for="cname"> City:</label> 
-                <input type="text"><br><br>
+      State:
+      <select name="state">
+        <option value="" select a state="selected">
+          select a State
+        </option></select
+      ><br /><br />
 
-                State: <select name="state">
-                       <option value="" select a state="selected"> select a State</option>
-                       </select><br><br>
+      <label for="zname"> Zip code:</label>
+      <input type="text" /><br /><br />
+      country:
+      <select name="country">
+        <option value="text" select a country="selected">
+          select a country
+        </option></select
+      ><br /><br />
 
-                <label for="zname"> Zip code:</label>
-                <input type="text"><br><br>
-                country: <select name="country">
-                         <option value="text" select a country="selected"> select a country</option>
-                         </select><br><br>
+      <lavel for="pname"> phone:</lavel>
+      <input type="digit" /><br /><br />
 
-                <lavel for="pname"> phone:</lavel>
-                <input type="digit"><br><br>
+      <lavel for="fname"> Fax:</lavel>
+      <input type="digit" /><br /><br />
 
-                <lavel for="fname"> Fax:</lavel>
-                <input type="digit"><br><br>
+      <label for="email"> Email:</label>
+      <input type="text" required /><br /><br />
 
-                <label for="email"> Email:</label>
-                <input type="text" required><br><br>
+      <label for="donation amount"> Donation amount:</label>
 
-                <label for="donation amount"> Donation amount:</label>
+      <input type="radio" id="none" name="none" value="none" />
+      <label for="none"> None</label>
 
-                <input type="radio" id="none" name="none" value="none"> 
-                <label for="none"> None</label>
+      <input type="radio" id="$50" name="amount" value="$50" />
+      <label for="$50"> $50</label>
 
-                <input type="radio" id="$50" name="amount" value="$50">
-                <label for="$50"> $50</label>
+      <input type="radio" id="$75" name="$75doller" value="$75" />
+      <label for="$75"> $75</label>
 
-                <input type="radio" id="$75" name="$75doller" value="$75">
-                <label for="$75"> $75</label>
+      <input type="radio" id="amount" name="$100doller" value="$100" />
+      <label for="$100"> $100</label>
 
-                <input type="radio" id="amount" name="$100doller" value="$100">
-                <label for="$100"> $100</label>
+      <input type="radio" id="amount" name="$250doller" value="$250" />
+      <label for="$250"> $250 </label>
 
-                <input type="radio" id="amount" name="$250doller" value="$250">
-                <label for="$250"> $250 </label>
+      <input type="radio" id="other" name="other" value="other" />
+      <label for="text"> other </label>
 
-                <input type="radio" id="other" name="other" value="other">
-                <label for="text"> other </label>
-                
-                <p> (check a button or type in you amount )</p>
+      <p>(check a button or type in you amount )</p>
 
-                <label for="info">Other Amount:</label>
-                <input type="text"><br> 
+      <label for="info">Other Amount:</label>
+      <input type="text" /><br />
 
-                <label for="info">Recurring Donation:</label>
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault"> I am Interested in giving on a regular basis</label>
-                <p> (check if yes)</p>
-                <h2>
-                    <p style ="color: red;"> Honorarium and memorial Donation Information</p>
-                </h2>
-                <label for="text"> <b>I would like to make those donation</b></label>
-                <input type="radio" id="one" name="first_item" value="1" />
-                <label for="text">  &nbsp;&nbsp; To Honour</label>
-                
-                <br> <input type="radio" id="two" name="first_item" value="2" />
-                <label for="text"> &nbsp;&nbsp; In Memory of</label> <br>
+      <label for="info">Recurring Donation:</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+        I am Interested in giving on a regular basis</label
+      >
+      <p>(check if yes)</p>
+      <h2>
+        <p style="color: red">Honorarium and memorial Donation Information</p>
+      </h2>
+      <label for="text"> <b>I would like to make those donation</b></label>
+      <input type="radio" id="one" name="first_item" value="1" />
+      <label for="text"> &nbsp;&nbsp; To Honour</label>
 
-                <label for="name"><b>Name:</b></label>
-                <input type="text" id="text" name="Name" value=""><br><br>
+      <br />
+      <input type="radio" id="two" name="first_item" value="2" />
+      <label for="text"> &nbsp;&nbsp; In Memory of</label> <br />
 
-                <label for="name"><b>Acknowledge Donation to:</b></label>
-                <input type="text" id="text" name="Name" value=""><br><br>
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="text" name="Name" value="" /><br /><br />
 
-                <label for="name"><b>Address:</b></label>
-                <input type="text" id="text" name="Name" value=""><br><br>
+      <label for="name"><b>Acknowledge Donation to:</b></label>
+      <input type="text" id="text" name="Name" value="" /><br /><br />
 
-                <label for="name"><b>city:</b></label>
-                <input type="text" id="text" name="Name" value=""><br><br>
-                
+      <label for="name"><b>Address:</b></label>
+      <input type="text" id="text" name="Name" value="" /><br /><br />
 
-
-        </form>     
-    </body>
+      <label for="name"><b>city:</b></label>
+      <input type="text" id="text" name="Name" value="" /><br /><br />
+    </form>
+  </body>
 </html>
